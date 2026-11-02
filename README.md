@@ -1,90 +1,373 @@
-<h1 align="center">Hi there, I'm Talha Butt 👋</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Talha Butt — Data Science Student | Deep Learning &amp; Computer Vision</title>
+<meta name="description" content="Portfolio of Talha Butt — BS Data Science student building deep learning and computer vision projects, with live demos.">
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=500&lines=Machine+Learning+Engineer;Data+Scientist;Python+Developer;Always+Learning+%F0%9F%9A%80" alt="Typing SVG" />
-</p>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-<p align="center">
-  <a href="https://github.com/talhabutt72">
-    <img src="https://img.shields.io/github/followers/talhabutt72?label=Followers&style=social" alt="GitHub Followers" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=talhabutt72&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
-</p>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
----
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">talha<span class="dot">.</span>butt</a>
 
-## 🧑‍💻 About Me
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
 
-- 🎯 Focused on **Machine Learning**, **Data Science**, and **AI**
-- 🌱 Constantly exploring new tools and techniques in the ML/AI space
-- 🤖 Building projects like **AutoML** and **AutoEDA** to make data science more accessible
-- 📊 Passionate about turning raw data into actionable insights
-- 📍 Based in **Sheikhupura, Pakistan**
-- 🚀 Always open to collaborating on interesting data-driven projects
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
----
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <canvas id="attentionCanvas" class="hero-canvas"></canvas>
 
-## 🛠️ Tech Stack
+  <div class="hero-content">
+    <p class="eyebrow">// data science student — deep learning &amp; computer vision</p>
+    <h1 class="hero-title">
+      I build systems<br> that learn from <span class="highlight">data</span>.
+    </h1>
+    <p class="hero-sub">
+      BS Data Science student building deep learning and computer vision
+      projects — a YOLO object detector, a fine-tuned speech emotion model,
+      and data tools — and shipping each one as a live demo.
+    </p>
 
-### Languages & Tools
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
 
-### ML / Data Science Libraries
-<p>
-  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" />
-  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
-</p>
+    <div class="hero-meta">
+      <span>Sheikhupura, Punjab, Pakistan</span>
+      <span class="sep">·</span>
+      <span>Open to paid remote internships</span>
+    </div>
+  </div>
 
----
+  <div class="scroll-cue" aria-hidden="true">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
 
-## 🚀 Featured Projects
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-label">01 / About</p>
+    <div class="about-grid">
+      <h2 class="section-title">
+        Building real projects and putting them online where anyone can try them.
+      </h2>
+      <div class="about-body">
+        <p>
+          I'm a BS Data Science student at Virtual University of Pakistan,
+          studying fully online since 2024 and working hands-on with machine
+          learning projects alongside my coursework.
+        </p>
+        <p>
+          My focus is deep learning and computer vision. I trained a YOLO
+          model to detect biscuit boxes and deployed it as a live app, and
+          fine-tuned Wav2Vec2 on the RAVDESS dataset to classify emotion in
+          speech. I also built a transformer-based sentiment classifier from
+          scratch in PyTorch, and a Streamlit tool for automated exploratory
+          data analysis.
+        </p>
+        <p>
+          I spent part of a 6-week ML engineering internship at
+          <strong>FlyRank AI</strong>, working on data leakage detection and
+          decision tree pipelines, before leaving to focus on building my own
+          projects. I'm now looking for a paid remote internship in machine
+          learning or computer vision.
+        </p>
+      </div>
+    </div>
 
-| Project | Description | Tech |
-|--------|-------------|------|
-| [🤖 AutoML](https://github.com/talhabutt72/AutoML) | Upload a dataset and let the pipeline do everything automatically | Python, Streamlit |
-| [📊 AutoEDA](https://github.com/talhabutt72/AutoEda) | Automated Exploratory Data Analysis tool | Python |
-| [📅 30 Days of Data Science](https://github.com/talhabutt72/30-Days-Data-Science) | 30-day data science learning challenge | Jupyter Notebook |
-| [🎗️ Breast Cancer Predictor](https://github.com/talhabutt72/Breast-Cancer-Predict-Model) | ML model for breast cancer prediction | Jupyter Notebook |
-| [🍳 Cooking Website](https://github.com/talhabutt72/CookingWebsite) | A web app for recipes and cooking | JavaScript |
-| [🧪 Old Basic ML Projects](https://github.com/talhabutt72/Old-Basic-ML-Projects) | Collection of foundational ML experiments | Python |
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">projects with live demos</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">30+</span>
+        <span class="stat-label">GitHub repositories</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2028</span>
+        <span class="stat-label">expected graduation, BS Data Science</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">Remote</span>
+        <span class="stat-label">open to paid internships</span>
+      </div>
+    </div>
+  </div>
+</section>
 
----
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="section-label">02 / Skills</p>
+    <h2 class="section-title">What I work with.</h2>
 
-## 📈 GitHub Stats
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Deep Learning</h3>
+        <div class="tags">
+          <span class="tag">PyTorch</span>
+          <span class="tag">CNNs</span>
+          <span class="tag">Transfer Learning</span>
+          <span class="tag">Transformers (Wav2Vec2)</span>
+          <span class="tag">Scikit-learn</span>
+        </div>
+      </div>
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=talhabutt72&show_icons=true&theme=tokyonight&hide_border=true" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=talhabutt72&layout=compact&theme=tokyonight&hide_border=true" width="48%" />
-</p>
+      <div class="skill-group">
+        <h3>Computer Vision &amp; Audio</h3>
+        <div class="tags">
+          <span class="tag">YOLO</span>
+          <span class="tag">Object Detection</span>
+          <span class="tag">Speech Emotion Recognition</span>
+          <span class="tag">Model Evaluation</span>
+        </div>
+      </div>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=talhabutt72&theme=tokyonight&hide_border=true" width="60%" />
-</p>
+      <div class="skill-group">
+        <h3>Data &amp; Tools</h3>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Pandas / NumPy</span>
+          <span class="tag">Seaborn / Matplotlib</span>
+          <span class="tag">Streamlit</span>
+          <span class="tag">Git &amp; GitHub</span>
+        </div>
+      </div>
 
----
+      <div class="skill-group">
+        <h3>NLP (learning)</h3>
+        <div class="tags">
+          <span class="tag">HuggingFace</span>
+          <span class="tag">RAG basics</span>
+          <span class="tag">Word2Vec</span>
+        </div>
+      </div>
 
-## 🤝 Connect With Me
+      <div class="skill-group">
+        <h3>Ways of working</h3>
+        <div class="tags">
+          <span class="tag">Remote / Async</span>
+          <span class="tag">Technical Writing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p>
-  <a href="https://github.com/talhabutt72">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  </a>
-  <a href="https://www.linkedin.com/in/talhabutt7810/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-</p>
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <div class="section-inner">
+    <p class="section-label">03 / Experience</p>
+    <h2 class="section-title">Where I've been building.</h2>
 
----
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2026</div>
+        <div class="timeline-content">
+          <h3>ML Engineering Intern — FlyRank AI</h3>
+          <p>
+            Part of a 6-week machine learning engineering internship. Worked
+            on data leakage detection notebooks and decision tree pipelines,
+            version-controlled and delivered through GitHub. Left to focus on
+            building my own deep learning projects.
+          </p>
+        </div>
+      </div>
 
-<p align="center">
-  <i>"Data is the new oil — and I love drilling." 🛢️</i>
-</p>
+      <div class="timeline-item">
+        <div class="timeline-date">2026 — Present</div>
+        <div class="timeline-content">
+          <h3>Independent projects</h3>
+          <p>
+            Building and deploying my own computer vision and deep learning
+            projects, each with a public GitHub repo and a live demo.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2024 — Present</div>
+        <div class="timeline-content">
+          <h3>BS Data Science — Virtual University of Pakistan</h3>
+          <p>
+            Fully online. Coursework and self-directed study spanning classical
+            ML, deep learning, and NLP fundamentals.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section section-alt" id="projects">
+  <div class="section-inner">
+    <p class="section-label">04 / Projects</p>
+    <h2 class="section-title">Selected work.</h2>
+    <p class="section-desc">
+      Three projects you can try right now. More on
+      <a href="https://github.com/talhabutt72" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Computer Vision · YOLO</span>
+        </div>
+        <h3>Biscuit Box Detector</h3>
+        <p>
+          A YOLO object detection model that finds biscuit boxes in images,
+          deployed as a Streamlit app. Upload a photo and see the detected
+          boxes and labels.
+        </p>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">
+          <a href="https://biscuit-box-detector-app.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
+          <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">Code →</a>
+          <!-- EDIT: replace the Code href above with the exact biscuit box repo link -->
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Audio · PyTorch</span>
+        </div>
+        <h3>Emotion in Voice</h3>
+        <p>
+          A speech emotion classifier. Wav2Vec2-base fine-tuned on the RAVDESS
+          dataset to recognize emotions like happy, sad, angry and calm, with
+          a Streamlit app for uploading audio.
+        </p>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">
+          <a href="https://emotion-in-voice-new.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
+          <a href="https://github.com/talhabutt72/emotion-in-voice" target="_blank" rel="noopener" class="project-link">Code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">Data Tool · Streamlit</span>
+        </div>
+        <h3>AutoEDA</h3>
+        <p>
+          Upload a CSV or Excel file to explore, plot and clean it in the
+          browser: missing values, duplicates, outliers, correlations, and
+          basic encoding.
+        </p>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">
+          <a href="https://autoeda-by-talha.streamlit.app/" target="_blank" rel="noopener" class="project-link">Live demo →</a>
+          <a href="https://github.com/talhabutt72/AutoEda" target="_blank" rel="noopener" class="project-link">Code →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">NLP · PyTorch</span>
+        </div>
+        <h3>Transformer Sentiment Classifier</h3>
+        <p>
+          Built from scratch in PyTorch — multi-head attention and learned
+          positional embeddings trained on IMDB-style review data, without
+          relying on pre-built transformer libraries.
+        </p>
+        <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+        <!-- EDIT: replace href above with the exact repo link, and delete this card if the repo is not public -->
+      </article>
+
+      <article class="project-card project-card-cta">
+        <h3>More on GitHub</h3>
+        <p>30+ repositories covering ML, deep learning, and data science.</p>
+        <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="project-link">
+          github.com/talhabutt72 →
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= WRITING ================= -->
+<section class="section" id="writing">
+  <div class="section-inner">
+    <p class="section-label">05 / Writing</p>
+    <div class="writing-row">
+      <h2 class="section-title">Beyond the code.</h2>
+      <p class="writing-desc">
+        I also write — mostly on Medium and Substack. It's a different kind
+        of practice from ML work, but the same instinct for structure and
+        clarity carries over.
+      </p>
+    </div>
+    <div class="writing-links">
+      <a href="https://medium.com/@talhabutt72" target="_blank" rel="noopener" class="btn btn-ghost">Read on Medium</a>
+      <!-- EDIT: add your Substack button here once you have the real URL:
+      <a href="YOUR-SUBSTACK-URL" target="_blank" rel="noopener" class="btn btn-ghost">Read on Substack</a>
+      -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section section-contact" id="contact">
+  <div class="section-inner">
+    <p class="section-label">06 / Contact</p>
+    <h2 class="section-title contact-title">Let's build something.</h2>
+    <p class="section-desc">
+      Open to paid remote internships in machine learning and computer vision,
+      and to interesting collaborations. Best way to reach me is LinkedIn or email.
+    </p>
+
+    <div class="contact-grid">
+      <!-- EDIT: uncomment this card and put in your real email address
+      <a href="mailto:YOUR-EMAIL" class="contact-card">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">YOUR-EMAIL</span>
+      </a>
+      -->
+      <a href="https://www.linkedin.com/in/talhabutt7810/" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/in/talhabutt7810</span>
+      </a>
+      <a href="https://github.com/talhabutt72" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">@talhabutt72</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="section-inner footer-inner">
+    <span>© <span id="year"></span> Talha Butt.</span>
+    <span>Built with HTML, CSS &amp; JS — hosted on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
